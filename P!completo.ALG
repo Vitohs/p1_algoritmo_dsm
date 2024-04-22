@@ -17,7 +17,7 @@ Inicio
    //setando produtos
    //professor eu entendi que era assim, ao inves de add na mão
    itens[1]<- "Tênis jordan"
-   itens[2]<- "Consolo preto 23cm"
+   itens[2]<- "Polo lacoste"
    itens[3]<- "Bermuda"
    preco[1]<- 700
    preco[2]<- 5000
@@ -84,10 +84,11 @@ Inicio
             //aqui, joguei um repita, mesma fita, proibir usuario de errar
             repita
                leia(qtd[j])
-               se (qtd[j] > estoque[j]) entao
+               se (qtd[j] > estoque[1]) entao
                   escreval("Paiaço, não tem produto suficiente no estoque.")
                fimse
-            ate(qtd[j] > 0) e (qtd[j] < estoque[j])
+            ate(qtd[j] > 0) e (qtd[j] < estoque[1])
+            estoque[1] <- estoque[1] - qtd[j]
             total[j] <- preco[1] * qtd[j]
             escreval("Boa escolha, o preço deu: ",total[j])
             se (formapgto[j] = 2) entao
@@ -102,10 +103,11 @@ Inicio
             escreval("certo, quantas unidades deseja?: ")
             repita
                leia(qtd[j])
-               se (qtd[j] > estoque[j]) entao
+               se (qtd[j] > estoque[2]) entao
                   escreval("Paiaço, não tem produto suficiente no estoque.")
                fimse
-            ate(qtd[j] > 0) e (qtd[j] < estoque[j])
+            ate(qtd[j] > 0) e (qtd[j] < estoque[2])
+            estoque[2] <- estoque[2] - qtd[j]
             total[j] <- preco[2] * qtd[j]
             escreval("Boa escolha, o preço deu: ",total[j])
             se (formapgto[j] = 2) entao
@@ -120,10 +122,11 @@ Inicio
             escreval("certo, quantas unidades deseja?: ")
             repita
                leia(qtd[j])
-               se (qtd[j] > estoque[j]) entao
+               se (qtd[j] > estoque[3]) entao
                   escreval("Paiaço, não tem produto suficiente no estoque.")
                fimse
-            ate(qtd[j] > 0) e (qtd[j] < estoque[j])
+            ate(qtd[j] > 0) e (qtd[j] < estoque[3])
+            estoque[3] <- estoque[3] - qtd[j]
             total[j] <- preco[3] * qtd[j]
             escreval("Boa escolha, o preço deu: ",total[j])
             se (formapgto[j] = 2) entao
