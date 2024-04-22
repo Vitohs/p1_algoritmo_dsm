@@ -64,7 +64,7 @@ Inicio
          //aqui, dei um laço, para o usuario nao fazerr cagada e tentar zuar
          repita
             limpatela()
-            escreval("Muito bem sr",nome[j],"o que deseja comprar")
+            escreval("Muito bem sr: ",nome[j]," o que deseja comprar")
             escreval( " 1- produto: ", itens[1] )
             escreval( "R$: ", preco[1] )
             escreval( " estoque do produto: ", estoque[1])
