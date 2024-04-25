@@ -10,12 +10,10 @@ Var
    total: vetor[1..3] de real
    case, compra, i, j: inteiro
    desconto: real
-   c: caractere
 Inicio
    //muito importante esse passo, crucial para o codigo rodar(me salvou inclusive)
    j<-0
    //setando produtos
-   //professor eu entendi que era assim, ao inves de add na mão
    itens[1]<- "Tênis jordan"
    itens[2]<- "Polo lacoste"
    itens[3]<- "Bermuda"
@@ -71,11 +69,11 @@ Inicio
             escreval()
             escreval( " 2- produto: ", itens[2] )
             escreval( "R$: ", preco[2] )
-            escreval( " estoque do produto: ", estoque[1])
+            escreval( " estoque do produto: ", estoque[2])
             escreval()
             escreval( " 3- produto: ", itens[3] )
             escreval( "R$: ", preco[3] )
-            escreval( " estoque do produto: ", estoque[1])
+            escreval( " estoque do produto: ", estoque[3])
             leia(compra)
          ate(compra = 1) ou (compra = 2) ou (compra = 3)
          //sequencia de SEs para entender o numero do pedido e o total da compra
@@ -148,7 +146,7 @@ Inicio
             escreval("cliente: ", nome[j])
             escreval("telefone: ", telefone[j])
             escreval("forma de pagamento: ", formapgto[j])
-            escreval("codigo de produto: ", itens[j])
+            escreval("codigo de produto: ", compra[j])
             escreval("quantidade do produto: ", qtd[j])
             escreval("valor total da compra: ", total[j])
             escreval()
@@ -156,6 +154,5 @@ Inicio
       fimse
    ate (case = 0)
    escreval("Obrigado pela preferencia")
-   //professor tamo junto, obrigado por ensinar tão bem
    //VAI SÂO PAULO
 Fimalgoritmo
