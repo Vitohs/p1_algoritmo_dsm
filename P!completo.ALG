@@ -41,7 +41,7 @@ Inicio
          escreval("Veja itens disponiveis da loja")
          para i de 1 ate 3 faca
             escreval( "produto: ", itens[i] )
-            escreval( "R$: ", preco[i] )
+            escreval( "Preço R$: ", preco[i] )
             escreval( "estoque: ", estoque[i] )
             escreval()
          fimpara
@@ -62,7 +62,7 @@ Inicio
          //aqui, dei um laço, para o usuario nao fazerr cagada e tentar zuar
          repita
             limpatela()
-            escreval("Muito bem sr: ",nome[j]," o que deseja comprar")
+            escreval("Muito bem sr: ",nome[j]," digite o codigo que deseja")
             escreval( " 1- produto: ", itens[1] )
             escreval( "R$: ", preco[1] )
             escreval( " estoque do produto: ", estoque[1])
@@ -146,7 +146,7 @@ Inicio
             escreval("cliente: ", nome[j])
             escreval("telefone: ", telefone[j])
             escreval("forma de pagamento: ", formapgto[j])
-            escreval("codigo de produto: ", compra[j])
+            escreval("codigo de produto: ", compra)
             escreval("quantidade do produto: ", qtd[j])
             escreval("valor total da compra: ", total[j])
             escreval()
